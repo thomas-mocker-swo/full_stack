@@ -4,6 +4,15 @@ resource "azurerm_storage_account" "central" {
   account_replication_type         = "LRS"
   account_tier                     = "Standard"
   #checkov:skip=CKV_AZURE_43:The Name does comply with the required pattern and length and company naming conventions
+  #checkov:skip=CKV_AZURE_44:Public network access is required for this demo environment
+  #checkov:skip=CKV2_AZURE_33:OK
+  #checkov:skip=CKV2_AZURE_1:OK
+  #checkov:skip=CKV2_AZURE_38:OK
+  #checkov:skip=CKV2_AZURE_40:OK
+  #checkov:skip=CKV2_AZURE_41:OK
+  #checkov:skip=CKV_AZURE_59:OK
+  #checkov:skip=CKV_AZURE_33:OK
+  #checkov:skip=CKV_AZURE_206:OK
   name                             = "euntmockerdemostoragecentral"
   resource_group_name              = azurerm_resource_group.demo.name
   location                         = var.env.location

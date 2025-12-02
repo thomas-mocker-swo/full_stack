@@ -1,6 +1,6 @@
 tflint {
   # Stelle sicher, dass du eine halbwegs aktuelle TFLint-Version nutzt
-  required_version = ">= 0.52.0"
+  required_version = ">= 0.60.0"
 }
 
 # Built-in Terraform Language Ruleset (Syntax, deprecated stuff, unused, etc.)
@@ -26,7 +26,7 @@ config {
   # format = "compact"                # falls du das Standardformat ändern willst
 }
 
-# ❗ Enforce snake_case für Terraform-Namen (Ressourcen, Variablen, Outputs, etc.)
+# Enforce snake_case für Terraform-Namen (Ressourcen, Variablen, Outputs, etc.)
 rule "terraform_naming_convention" {
   enabled = true
   format  = "snake_case"

@@ -19,7 +19,7 @@ plugin "azurerm" {
 
 # Generelles TFLint-Verhalten
 config {
-  call_module_type = "all"          # auch Module prüfen
+  call_module_type    = "all"          # auch Module prüfen
   force               = false         # nicht mit 0 exit code rausgehen bei Fehlern
   disabled_by_default = false         # alle "recommended" Regeln aktiv
   # optional:

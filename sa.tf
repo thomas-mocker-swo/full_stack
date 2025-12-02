@@ -1,4 +1,4 @@
-resource "azurerm_storage_account" "CENTRAL" {
+resource "azurerm_storage_account" "central" {
   access_tier              = "Hot"
   account_kind             = "StorageV2"
   account_replication_type = "LRS"

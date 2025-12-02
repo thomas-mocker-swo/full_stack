@@ -1,4 +1,4 @@
-#checkov:skip=CKV_AZURE_43: Name entspricht Unternehmensvorgaben
+# checkov:skip=CKV_AZURE_43
 resource "azurerm_storage_account" "central" {
   access_tier                      = "Hot"
   account_kind                     = "StorageV2"

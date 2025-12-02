@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "central" {
   #checkov:skip=CKV_AZURE_59:OK
   #checkov:skip=CKV_AZURE_33:OK
   #checkov:skip=CKV_AZURE_206:OK
-  name                             = "euntmockerdemostoragecentral"
+  name                             = "euntmockerdemostorage"
   resource_group_name              = azurerm_resource_group.demo.name
   location                         = var.location
   https_traffic_only_enabled       = false

@@ -15,7 +15,7 @@ resource "azurerm_storage_account" "central" {
   #checkov:skip=CKV_AZURE_206:OK
   name                             = "euntmockerdemostoragecentral"
   resource_group_name              = azurerm_resource_group.demo.name
-  location                         = var.env.location
+  location                         = var.location
   https_traffic_only_enabled       = false
   allow_nested_items_to_be_public  = false
   cross_tenant_replication_enabled = true

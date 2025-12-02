@@ -1,8 +1,8 @@
 resource "azurerm_storage_account" "central" {
-  access_tier                      = "Hot"
-  account_kind                     = "StorageV2"
-  account_replication_type         = "LRS"
-  account_tier                     = "Standard"
+  access_tier              = "Hot"
+  account_kind             = "StorageV2"
+  account_replication_type = "LRS"
+  account_tier             = "Standard"
   #checkov:skip=CKV_AZURE_43:The Name does comply with the required pattern and length and company naming conventions
   #checkov:skip=CKV_AZURE_44:Public network access is required for this demo environment
   #checkov:skip=CKV2_AZURE_33:OK

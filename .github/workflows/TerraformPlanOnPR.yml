@@ -57,7 +57,7 @@ jobs:
           skip_check: CKV_AZURE_43  # Beispiel zum Überspringen einer spezifischen Prüfung
 
       - name: Upload SARIF to GitHub Security
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         if: success() || failure()
         with:
           sarif_file: results.sarif       

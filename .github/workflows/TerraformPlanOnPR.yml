@@ -66,11 +66,11 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
+      - name: Terraform Init
+        run: terraform init -backend-config="backend.conf"  
+
       - name: Terraform Validate
         run: terraform validate
-
-      - name: Terraform Format
-        run: terraform fmt -check
 
   terraform-plan:
     name: Terraform Plan

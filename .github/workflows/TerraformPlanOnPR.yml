@@ -54,7 +54,7 @@ jobs:
           output_file_path: console,results.sarif
           quiet: true       # weniger Rauschen im Log
           soft_fail: false  # auf true setzen, wenn Checkov keine Builds brechen soll
-          skip_check: CKV_AZURE_43  # Beispiel zum Überspringen einer spezifischen Prüfung
+          #skip_check: CKV_AZURE_43  # Beispiel zum Überspringen einer spezifischen Prüfung
 
       - name: Upload SARIF to GitHub Security
         uses: github/codeql-action/upload-sarif@v4

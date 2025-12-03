@@ -6,12 +6,17 @@ name: Use central Terraform Plan on PR
 on:
   pull_request:
     branches:
-      - main
+    - main
   workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  security-events: write  
 
 jobs:
   terraform:
-    uses: org/reusable/.github/workflows/terraform-plan-on-pr.yml@main
+    uses: thomas-mocker-swo/reuseable/.github/workflows/terraform-plan-on-pr.yml@main
     with:
       tf_working_directory: "."   # oder z.B. "infra/terraform"
     secrets:

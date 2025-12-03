@@ -11,7 +11,7 @@ on:
 
 jobs:
   terraform:
-    uses: thomas-mocker-swo/reusable/.github/workflows/terraform-plan-on-pr.yml@main
+    uses: thomas-mocker-swo/reuseable/.github/workflows/terraform-plan-on-pr.yml@main
     with:
       tf_working_directory: "."   # oder z.B. "infra/terraform"
     secrets:

@@ -1,4 +1,4 @@
-# Repo: org/project-xyz-infra
+# Repo: thomas-mocker-swo/reuseable
 # File: .github/workflows/terraform-plan-on-pr.yml
 
 name: Use central Terraform Plan on PR

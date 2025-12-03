@@ -6,7 +6,7 @@ name: Use central Terraform Plan on PR
 on:
   pull_request:
     branches:
-      - main
+    - main
   workflow_dispatch:
 
 jobs:

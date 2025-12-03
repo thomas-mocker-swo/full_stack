@@ -9,6 +9,11 @@ on:
     - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  id-token: write
+  security-events: write  
+
 jobs:
   terraform:
     uses: thomas-mocker-swo/reuseable/.github/workflows/terraform-plan-on-pr.yml@main

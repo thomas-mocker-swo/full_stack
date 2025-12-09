@@ -1,5 +1,5 @@
 # tflint-ignore: azurerm_resources_missing_prevent_destroy
-resource "azurerm_storage_account" "central" {
+resource "azurerm_storage_account" "CENTRAL" {
   access_tier              = "Hot"
   account_kind             = "StorageV2"
   account_replication_type = "LRS"

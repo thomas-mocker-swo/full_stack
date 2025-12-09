@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   terraform:
-    uses: thomas-mocker-swo/reuseable/.github/workflows/terraform-plan-on-pr.yml@195c7379b97633f11163fb28693c2d3da2414d81 #main oder fester Commit SHA
+    uses: thomas-mocker-swo/reuseable/.github/workflows/terraform-plan-on-pr.yml@main #main oder fester Commit SHA
     with:
       tf_working_directory: "."   # oder z.B. "infra/terraform"
     secrets:

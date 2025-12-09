@@ -1,5 +1,5 @@
 # tflint-ignore: azurerm_resources_missing_prevent_destroy
-resource "azurerm_storage_account" "central" {
+resource "azurerm_storage_account" "CENTral" {
   access_tier              = "Hot"
   account_kind             = "StorageV2"
   account_replication_type = "LRS"
@@ -9,10 +9,6 @@ resource "azurerm_storage_account" "central" {
   #checkov:skip=CKV_AZURE_33:Ensure Storage logging is enabled for Queue service for read, write and delete requests
   #checkov:skip=CKV_AZURE_206:Ensure that Storage Accounts use replication
   #checkov:skip=CKV2_AZURE_1:Ensure storage for critical data are encrypted with Customer Managed Key
-  #checkov:skip=CKV2_AZURE_33:OK
-  #checkov:skip=CKV2_AZURE_40:OK
-  #checkov:skip=CKV_AZURE_59:OK
-  #checkov:skip=CKV_AZURE_44:OK
   name                             = "euntmockerdemostorage"
   resource_group_name              = azurerm_resource_group.demo.name
   location                         = var.location
